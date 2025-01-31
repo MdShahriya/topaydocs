@@ -1,19 +1,53 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+topay:
+  label: Topay
+  permalink: /topay
+  description: Topay Foundation's blockchain technology and innovations.
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+blockchain:
+  label: Blockchain
+  permalink: /blockchain
+  description: Discussions on blockchain technologies, use cases, and trends.
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+crypto:
+  label: Cryptocurrency
+  permalink: /crypto
+  description: Exploring the world of cryptocurrencies and related technologies.
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+decentralized:
+  label: Decentralized
+  permalink: /decentralized
+  description: Information and articles on decentralized applications and systems.
+
+security:
+  label: Security
+  permalink: /security
+  description: Insights into blockchain security, cryptography, and protecting digital assets.
+
+development:
+  label: Development
+  permalink: /development
+  description: Development resources, tutorials, and guides for blockchain developers.
+
+innovation:
+  label: Innovation
+  permalink: /innovation
+  description: Topay Foundation's contributions to technological innovations in blockchain.
+
+community:
+  label: Community
+  permalink: /community
+  description: Engaging with the Topay Foundation community and collaborations.
+
+technology:
+  label: Technology
+  permalink: /tags/technology
+  description: Technology insights
+cryptocurrency:
+  label: Cryptocurrency
+  permalink: /tags/cryptocurrency
+  description: All posts about cryptocurrency and its impact.
+  
+scams:
+  label: Scams
+  permalink: /tags/scams
+  description: Posts related to cryptocurrency scams and how to avoid them.
