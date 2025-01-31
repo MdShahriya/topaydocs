@@ -1,0 +1,2 @@
+{"icon-gradient-0":"#0D7CE9","icon-gradient-1":"#15CFF1","slogan":"#141414","font":"#000000","bg":"transparent"}
+      
