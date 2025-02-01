@@ -1,10 +1,12 @@
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import clsx from "clsx";
+import Heading from "@theme/Heading";
+import styles from "./styles.module.css";
+import { ShieldCheck, Lock, Users } from "lucide-react"; // Modern icons
 
 const FeatureList = [
   {
-    title: 'Scam Prevention Tools',
+    title: "Scam Prevention Tools",
+    icon: <ShieldCheck size={48} color="#ff6b6b" />,
     description: (
       <>
         Topay Foundation provides cutting-edge tools and strategies to protect users from crypto scams, ensuring safer digital interactions.
@@ -12,7 +14,8 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Quantum Threat Defense',
+    title: "Quantum Threat Defense",
+    icon: <Lock size={48} color="#4f46e5" />,
     description: (
       <>
         We are leading the way in addressing quantum threats to the crypto industry, developing robust solutions for a future-proof digital ecosystem.
@@ -20,7 +23,8 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Community Collaboration',
+    title: "Community Collaboration",
+    icon: <Users size={48} color="#10b981" />,
     description: (
       <>
         Our foundation thrives on a strong community, bringing together experts, developers, and enthusiasts to fight scams and quantum threats.
@@ -29,12 +33,15 @@ const FeatureList = [
   },
 ];
 
-function Feature({ title, description }) {
+function Feature({ title, description, icon }) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+    <div className="col col--4">
+      <div className={clsx("text--center", styles.featureCard)}>
+        <div className={styles.icon}>{icon}</div>
+        <Heading as="h3" className={styles.featureTitle}>
+          {title}
+        </Heading>
+        <p className={styles.featureDescription}>{description}</p>
       </div>
     </div>
   );
