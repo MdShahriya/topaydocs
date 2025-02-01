@@ -56,7 +56,7 @@ const config = {
   themeConfig: {
     image: 'img/Brand/TOPAY.png',
     navbar: {
-      title: 'Topay Documentation',
+      title: 'Topay Docs',
       logo: {
         alt: 'TOPAY Logo',
         src: 'img/Brand/icon.png',
