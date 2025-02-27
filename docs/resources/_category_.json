@@ -1,0 +1,8 @@
+{
+  "label": "resources",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Simple resources of TOPAY Foundation , like : whitepaper,tokenomics etc."
+  }
+}
