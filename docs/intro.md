@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: "🏛️ Short Intro"
+sidebar_label: " 🏛️ Short Intro "
 ---
 
 # 🌍 Introduction  
