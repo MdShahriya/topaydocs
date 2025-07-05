@@ -155,7 +155,7 @@ const config = {
             },
             {
               label: 'Ethical Finance',
-              to: '/docs/ethical-finance-&-blockchain/Ethical-Finance-&-Blockchain',
+              to: '/docs/ethical-finance-&-blockchain',
             },
           ],
         },
