@@ -1,58 +1,205 @@
 .features {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 0;
-  width: 100%;
+  padding: 6rem 0;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
 }
 
-.featureContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  width: 100%;
-  max-width: 1200px;
+[data-theme='dark'] .features {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+}
+
+.features::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%230D7CE9" stop-opacity="0.05"/><stop offset="100%" stop-color="%2315CFF1" stop-opacity="0.05"/></linearGradient></defs><circle cx="100" cy="100" r="50" fill="url(%23grad)"/><circle cx="900" cy="200" r="80" fill="url(%23grad)"/><circle cx="200" cy="800" r="60" fill="url(%23grad)"/><circle cx="800" cy="900" r="70" fill="url(%23grad)"/></svg>') no-repeat center center;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.features .container {
+  position: relative;
+  z-index: 1;
+}
+
+.featuresHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.featuresTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #0D7CE9 0%, #15CFF1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.featuresSubtitle {
+  font-size: 1.2rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+[data-theme='dark'] .featuresSubtitle {
+  color: #94a3b8;
 }
 
 .featureCard {
-  border-radius: 12px;
-  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 2.5rem;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 350px;
-  flex: 1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+[data-theme='dark'] .featureCard {
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.featureCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0D7CE9, #15CFF1, #252833);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .featureCard:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureCard:hover::before {
+  transform: scaleX(1);
+}
+
+.icon {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(135deg, rgba(13, 124, 233, 0.1), rgba(21, 207, 241, 0.1));
+  transition: all 0.3s ease;
+}
+
+.featureCard:hover .icon {
+  transform: scale(1.1) rotate(5deg);
+  background: linear-gradient(135deg, rgba(13, 124, 233, 0.2), rgba(21, 207, 241, 0.2));
 }
 
 .featureTitle {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #252833;
+}
+
+[data-theme='dark'] .featureTitle {
+  color: #f1f5f9;
 }
 
 .featureDescription {
   font-size: 1rem;
+  line-height: 1.6;
+  color: #333333;
+  flex-grow: 1;
+}
+
+[data-theme='dark'] .featureDescription {
+  color: #94a3b8;
+}
+
+/* Grid Layout */
+.features .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-  .featureContainer {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 996px) {
+  .featuresTitle {
+    font-size: 2rem;
   }
+  
+  .featuresSubtitle {
+    font-size: 1.1rem;
+  }
+  
+  .features {
+    padding: 4rem 0;
+  }
+  
+  .featuresHeader {
+    margin-bottom: 3rem;
+  }
+}
 
+@media (max-width: 768px) {
+  .features .row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
   .featureCard {
-    width: 100%;
-    max-width: 400px;
+    padding: 2rem;
+  }
+  
+  .featuresTitle {
+    font-size: 1.8rem;
+  }
+  
+  .featuresSubtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Animation delays for staggered effect */
+.featureCard:nth-child(1) {
+  animation: fadeInUp 0.6s ease-out 0.1s both;
+}
+
+.featureCard:nth-child(2) {
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+.featureCard:nth-child(3) {
+  animation: fadeInUp 0.6s ease-out 0.3s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

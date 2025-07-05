@@ -1,33 +1,33 @@
 import clsx from "clsx";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
-import { ShieldCheck, Lock, Users } from "lucide-react"; // Modern icons
+import { ShieldCheck, Lock, Users, Zap, Globe, Award } from "lucide-react";
 
 const FeatureList = [
   {
-    title: "Scam Prevention Tools",
-    icon: <ShieldCheck size={48} color="#ff6b6b" />,
+    title: "Advanced Scam Prevention",
+    icon: <ShieldCheck size={48} color="#0D7CE9" />,
     description: (
       <>
-        Topay Foundation provides cutting-edge tools and strategies to protect users from crypto scams, ensuring safer digital interactions.
+        Cutting-edge AI-powered tools and real-time monitoring systems that detect and prevent crypto scams before they can cause harm to users.
       </>
     ),
   },
   {
-    title: "Quantum Threat Defense",
-    icon: <Lock size={48} color="#4f46e5" />,
+    title: "Quantum-Resistant Security",
+    icon: <Lock size={48} color="#15CFF1" />,
     description: (
       <>
-        We are leading the way in addressing quantum threats to the crypto industry, developing robust solutions for a future-proof digital ecosystem.
+        Future-proof cryptographic solutions designed to withstand quantum computing threats, ensuring long-term security for digital assets.
       </>
     ),
   },
   {
-    title: "Community Collaboration",
-    icon: <Users size={48} color="#10b981" />,
+    title: "Global Community Network",
+    icon: <Users size={48} color="#252833" />,
     description: (
       <>
-        Our foundation thrives on a strong community, bringing together experts, developers, and enthusiasts to fight scams and quantum threats.
+        A worldwide network of security experts, developers, and researchers collaborating to create a safer cryptocurrency ecosystem.
       </>
     ),
   },
@@ -51,6 +51,15 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+        <div className={styles.featuresHeader}>
+          <Heading as="h2" className={styles.featuresTitle}>
+            Why Choose Topay Foundation?
+          </Heading>
+          <p className={styles.featuresSubtitle}>
+            We're building the future of secure cryptocurrency through innovative technology, 
+            community collaboration, and proactive threat prevention.
+          </p>
+        </div>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

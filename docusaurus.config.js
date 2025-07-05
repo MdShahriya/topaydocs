@@ -33,7 +33,7 @@ const config = {
       {
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/TOPAY-FOUNDATION/topaydocs.git',
+          editUrl: 'https://github.com/TOPAY-FOUNDATION',
         },
         blog: {
           showReadingTime: true,
@@ -41,7 +41,7 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl: 'https://github.com/TOPAY-FOUNDATION/topaydocs.git',
+          editUrl: 'https://github.com/TOPAY-FOUNDATION',
           onInlineTags: 'ignore', // Ignore inline tags warning
           onInlineAuthors: 'ignore', // Ignore inline authors warning
           onUntruncatedBlogPosts: 'ignore', // Ignore untruncated posts warning
@@ -56,17 +56,44 @@ const config = {
   themeConfig: {
     image: 'img/Brand/TOPAY.png',
     navbar: {
-      title: 'Topay Docs',
+      title: 'Topay Foundation',
       logo: {
-        alt: 'TOPAY Logo',
+        alt: 'Topay Foundation Logo',
         src: 'img/Brand/icon.png',
       },
+      hideOnScroll: true,
       items: [
-        { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/TOPAY-FOUNDATION/topaydocs.git',
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: '📚 Documentation',
+        },
+        {to: '/blog', label: '📝 Blog', position: 'left'},
+        {
+          type: 'dropdown',
+          label: '🔗 Resources',
+          position: 'left',
+          items: [
+            {
+              label: 'Community',
+              href: 'https://discord.gg/ZaEUMrAW',
+            },
+            {
+              label: 'Support',
+              href: 'mailto:support@topayfoundation.com',
+            },
+          ],
+        },
+        {
+          href: 'https://github.com/TOPAY-FOUNDATION',
           label: 'GitHub',
           position: 'right',
+        },
+        {
+          type: 'html',
+          position: 'right',
+          value: '<a href="https://topayfoundation.com/donate" class="button button--primary button--sm" style="margin-left: 8px;">💝 Donate</a>',
         },
       ],
     },
@@ -74,20 +101,45 @@ const config = {
       style: 'dark',
       links: [
         {
-          title: 'Community',
+          title: '📖 Documentation',
+          items: [
+            {
+              label: 'Getting Started',
+              to: '/docs/intro',
+            },
+            {
+              label: 'Security Guide',
+              to: '/docs/security',
+            },
+            {
+              label: 'API Reference',
+              to: '/docs/api',
+            },
+          ],
+        },
+        {
+          title: '🌐 Community',
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.gg/uZNAzSJYgW',
+              href: 'https://discord.gg/ZaEUMrAW',
             },
             {
               label: 'X',
               href: 'https://x.com/topayfoundation',
             },
+            {
+              label: 'Telegram',
+              href: 'https://t.me/topayfoundation',
+            },
+            {
+              label: 'Reddit',
+              href: 'https://reddit.com/r/topay',
+            },
           ],
         },
         {
-          title: 'More',
+          title: '🔗 Resources',
           items: [
             {
               label: 'Blog',
@@ -95,12 +147,41 @@ const config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/TOPAY-FOUNDATION/topaydocs.git',
+              href: 'https://github.com/TOPAY-FOUNDATION',
+            },
+            {
+              label: 'Whitepaper',
+              href: '/docs/whitepaper',
+            },
+            {
+              label: 'Roadmap',
+              href: '/docs/roadmap',
+            },
+          ],
+        },
+        {
+          title: '🏢 Organization',
+          items: [
+            {
+              label: 'About Us',
+              href: 'https://topayfoundation.com/about',
+            },
+            {
+              label: 'Contact',
+              href: 'mailto:contact@topayfoundation.com',
+            },
+            {
+              label: 'Privacy Policy',
+              href: '/privacy',
+            },
+            {
+              label: 'Terms of Service',
+              href: '/terms',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} TOPAY Foundation, Inc.`,
+      copyright: `Copyright © ${new Date().getFullYear()} TOPAY Foundation. Built with ❤️ for a safer crypto future.`,
     },
     prism: {
       theme: prismThemes.github,
