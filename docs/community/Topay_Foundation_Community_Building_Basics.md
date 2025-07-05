@@ -96,4 +96,4 @@ Together, we can **create a safer, scam-free crypto ecosystem** and **prepare fo
 ---
 
 💌 **Get Involved Today!**  
-Check out our **community portal** or **contact us directly** to join the movement! 🚀  
+Check out our **community portal** or **contact us directly** to join the movement! 🚀

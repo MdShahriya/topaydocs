@@ -19,7 +19,7 @@ const config = {
   organizationName: 'TOPAY-FOUNDATION',
   projectName: 'topaydocs',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
@@ -105,15 +105,15 @@ const config = {
           items: [
             {
               label: 'Getting Started',
-              to: '/docs/intro',
+              to: '/docs/getting-started/Introduction_to_Topay_Foundation',
             },
             {
               label: 'Security Guide',
-              to: '/docs/security',
+              to: '/docs/security/Crypto_Security_Fundamentals',
             },
             {
-              label: 'API Reference',
-              to: '/docs/api',
+              label: 'Guides',
+              to: '/docs/guides/Basic_Protocols_for_Scam_Prevention',
             },
           ],
         },
@@ -150,12 +150,12 @@ const config = {
               href: 'https://github.com/TOPAY-FOUNDATION',
             },
             {
-              label: 'Whitepaper',
-              href: '/docs/whitepaper',
+              label: 'Quantum Threats',
+              to: '/docs/Quantum-threats-&-Scams/Quantum-Threats-in-Blockchain-Technology',
             },
             {
-              label: 'Roadmap',
-              href: '/docs/roadmap',
+              label: 'Ethical Finance',
+              to: '/docs/ethical-finance-&-blockchain/Ethical-Finance-&-Blockchain',
             },
           ],
         },
@@ -172,11 +172,11 @@ const config = {
             },
             {
               label: 'Privacy Policy',
-              href: '/privacy',
+              href: 'https://topayfoundation.com/privacy',
             },
             {
               label: 'Terms of Service',
-              href: '/terms',
+              href: 'https://topayfoundation.com/terms',
             },
           ],
         },

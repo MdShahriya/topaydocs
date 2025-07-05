@@ -84,4 +84,4 @@ To stay ahead of these threats, **continuous research, development, and proactiv
 
 ---  
 
-For more information on how **quantum threats** could impact your crypto assets, or to discuss **quantum-resistant** strategies, feel free to **contact** Topay Foundation’s security experts. 📩  
+For more information on how **quantum threats** could impact your crypto assets, or to discuss **quantum-resistant** strategies, feel free to **contact** Topay Foundation’s security experts. 📩

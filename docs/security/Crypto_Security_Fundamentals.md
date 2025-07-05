@@ -147,4 +147,4 @@ Whether you are a **user, developer, or investor**, following **best practices**
 ### **Thank You! 🙌**  
 
 🙏 Thank you for learning about **crypto security fundamentals**.  
-Stay **safe, secure, and vigilant** in your **crypto journey!** 🔐🚀  
+Stay **safe, secure, and vigilant** in your **crypto journey!** 🔐🚀

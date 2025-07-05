@@ -114,4 +114,4 @@ Getting started with **Topay Foundation** is **easy**! 🚀
 
 ---
 
-🌟 **Start exploring, get involved, and let’s build a safer future for the crypto industry.** 🚀  
+🌟 **Start exploring, get involved, and let’s build a safer future for the crypto industry.** 🚀

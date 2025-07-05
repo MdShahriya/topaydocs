@@ -136,4 +136,4 @@ If you **didn’t find an answer** to your question, feel free to:
 📩 **Contact us via our website**.  
 💬 **Join our community discussions** on **Discord & Telegram**.  
 
-Thank you for being part of **Topay Foundation’s mission**! 🙌 Together, we can build a **safer and more secure crypto environment**. 🔐🚀  
+Thank you for being part of **Topay Foundation’s mission**! 🙌 Together, we can build a **safer and more secure crypto environment**. 🔐🚀

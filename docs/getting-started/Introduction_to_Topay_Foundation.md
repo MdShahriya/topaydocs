@@ -75,4 +75,4 @@ Thank you for being a part of this journey with **Topay Foundation**! 💙
 
 ---
 
-🌟 **Join us & be part of the movement to secure the future of crypto!** 🔐✨  
+🌟 **Join us & be part of the movement to secure the future of crypto!** 🔐✨

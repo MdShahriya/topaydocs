@@ -92,4 +92,4 @@ By following these **basic protocols for scam prevention**, you **significantly 
 
 ---
 
-🔹 **For more information or assistance** in protecting your crypto investments, feel free to **reach out to us via our contact page** or **join our community forums**. 💬📢  
+🔹 **For more information or assistance** in protecting your crypto investments, feel free to **reach out to us via our contact page** or **join our community forums**. 💬📢

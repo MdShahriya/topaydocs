@@ -28,7 +28,7 @@ function HeroSection() {
               </Link>
               <Link
                 className={styles.secondaryButton}
-                to="/docs/topay-basics/Getting_Started_with_Topay_Foundation">
+                to="/docs/getting-started/Getting_Started_with_Topay_Foundation">
                 Quick Start Guide
               </Link>
             </div>
@@ -65,14 +65,14 @@ function QuickNavSection() {
       title: "Getting Started",
       description: "Learn the basics of crypto security and scam prevention",
       icon: <BookOpen size={24} />,
-      link: "/docs/topay-basics/Getting_Started_with_Topay_Foundation",
+      link: "/docs/getting-started/Getting_Started_with_Topay_Foundation",
       color: "#0D7CE9"
     },
     {
       title: "Security Guide",
       description: "Comprehensive guide to protecting your digital assets",
       icon: <Shield size={24} />,
-      link: "/docs/topay-basics/Crypto_Security_Fundamentals",
+      link: "/docs/security/Crypto_Security_Fundamentals",
       color: "#15CFF1"
     },
     {
@@ -86,7 +86,7 @@ function QuickNavSection() {
       title: "Community",
       description: "Join our global network of security advocates",
       icon: <Users size={24} />,
-      link: "/docs/topay-basics/Topay_Foundation_Community_Building_Basics",
+      link: "/docs/community/Topay_Foundation_Community_Building_Basics",
       color: "#333333"
     }
   ];
@@ -153,7 +153,7 @@ function CTASection() {
             Join thousands of users who trust Topay Foundation for their crypto security needs.
           </p>
           <div className={styles.ctaActions}>
-            <Link className={styles.primaryButton} to="/docs/intro">
+            <Link className={styles.primaryButton} to="/docs/getting-started/Introduction_to_Topay_Foundation">
               <BookOpen size={20} />
               Start Learning
               <ArrowRight size={16} />

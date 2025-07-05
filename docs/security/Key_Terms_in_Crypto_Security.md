@@ -184,4 +184,4 @@ At **Topay Foundation**, we **educate & empower** the community to **make inform
 
 ---
 
-🌟 **Stay secure, stay informed, and take control of your crypto future!** 🛡️🚀  
+🌟 **Stay secure, stay informed, and take control of your crypto future!** 🛡️🚀
